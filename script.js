@@ -355,7 +355,7 @@ function showResult() {
 
   const correct = history.filter(h => h.isCorrect).length;
   const total   = shuffled.length;
-  const pct     = Math.round((correct / total) * 100);
+  const pct     = Math.round((correct / total) * 1);
 
   // บันทึกสถิติสูงสุด
   if (score > highscore) {
