@@ -287,16 +287,16 @@ function selectAnswer(btn) {
     isCorrect
   });
 
-  if (isCorrect) {
-    // คะแนนโบนัสตามความเร็ว: 50 base + สูงสุด 50 bonus
-    const bonus = 50 + Math.round((timeLeft / TIMER_MAX) * 50);
-    score += bonus;
-    streak++;
-    el.scoreDisplay.textContent = score;
-    if (streak >= 2) showStreak();
-  } else {
-    streak = 0;
-  }
+  // if (isCorrect) {
+  //   // คะแนนโบนัสตามความเร็ว: 50 base + สูงสุด 50 bonus
+  //   const bonus = 50 + Math.round((timeLeft / TIMER_MAX) * 50);
+  //   score += bonus;
+  //   streak++;
+  //   el.scoreDisplay.textContent = score;
+  //   if (streak >= 2) showStreak();
+  // } else {
+  //   streak = 0;
+  // }
 
   revealAnswers(btn);
   el.nextBtn.classList.add('show');
@@ -355,7 +355,7 @@ function showResult() {
 
   const correct = history.filter(h => h.isCorrect).length;
   const total   = shuffled.length;
-  const pct     = Math.round((correct / total) * 1);
+  const pct     = Math.round((correct / total) * 100);
 
   // บันทึกสถิติสูงสุด
   if (score > highscore) {
