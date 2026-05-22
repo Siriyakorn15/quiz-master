@@ -289,7 +289,7 @@ function selectAnswer(btn) {
 
   if (isCorrect) {
     // คะแนนโบนัสตามความเร็ว: 50 base + สูงสุด 50 bonus
-    const bonus = 50 + Math.round((timeLeft / TIMER_MAX) * 50);
+    const bonus = 1 ;
     score += bonus;
     streak++;
     el.scoreDisplay.textContent = score;
