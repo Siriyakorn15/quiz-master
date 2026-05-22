@@ -365,11 +365,11 @@ function showResult() {
 
   // เลือก Emoji และข้อความตามผลลัพธ์
   const tiers = [
-    { min: 0,   emoji: '😅', title: 'ลองใหม่อีกครั้งนะ!' },
-    { min: 1,   emoji: '😐', title: 'พอใช้ได้!' },
-    { min: 2,   emoji: '😊', title: 'เก่งมาก!' },
-    { min: 3,   emoji: '🎉', title: 'ยอดเยี่ยม!' },
-    { min: 4,   emoji: '🏆', title: 'สมบูรณ์แบบ!' },
+    { min: 0,   emoji: '😅', title: 'ห่วยแตกมาก!' },
+    { min: 1,   emoji: '😐', title: 'ได้แค่เนี่ย จอก!' },
+    { min: 2,   emoji: '😊', title: 'ก็พอเก่ง!' },
+    { min: 3,   emoji: '🎉', title: 'เก่งนักนะ!' },
+    { min: 4,   emoji: '🏆', title: 'เริ่ดดดดด!' },
   ];
   const tier = tiers.filter(t => correct >= t.min).pop();
 
