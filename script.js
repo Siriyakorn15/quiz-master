@@ -197,7 +197,7 @@ function showQuestion() {
   const q  = shuffled[currentIdx];
 
   el.qProgress.textContent   = `ข้อ ${currentIdx + 1} / ${shuffled.length}`;
-  el.progressFill.style.width = `${(currentIdx / shuffled.length) * 100}%`;
+  el.progressFill.style.width = `${(currentIdx / shuffled.length) * 1}%`;
   el.questionText.textContent = q.question;
   el.nextBtn.classList.remove('show');
 
