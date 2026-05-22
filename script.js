@@ -369,7 +369,7 @@ function showResult() {
     { min: 1,   emoji: '😐', title: 'ได้แค่เนี่ย จอก!' },
     { min: 2,   emoji: '😊', title: 'ก็พอเก่ง!' },
     { min: 3,   emoji: '🎉', title: 'เก่งนักนะ!' },
-    { min: 4,   emoji: '🏆', title: 'เริ่ดดดดด!' },
+    { min: 4,   emoji: '🏆', title: 'เริ่ดมากแม่!' },
   ];
   const tier = tiers.filter(t => correct >= t.min).pop();
 
