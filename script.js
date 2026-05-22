@@ -197,7 +197,7 @@ function showQuestion() {
   const q  = shuffled[currentIdx];
 
   el.qProgress.textContent   = `ข้อ ${currentIdx + 1} / ${shuffled.length}`;
-  el.progressFill.style.width = `${(currentIdx / shuffled.length) * 100}%`;
+  el.progressFill.style.width = `${(currentIdx / shuffled.length) * 1}%`;
   el.questionText.textContent = q.question;
   el.nextBtn.classList.remove('show');
 
@@ -287,16 +287,16 @@ function selectAnswer(btn) {
     isCorrect
   });
 
-  // if (isCorrect) {
-  //   // คะแนนโบนัสตามความเร็ว: 50 base + สูงสุด 50 bonus
-  //   const bonus = 50 + Math.round((timeLeft / TIMER_MAX) * 50);
-  //   score += bonus;
-  //   streak++;
-  //   el.scoreDisplay.textContent = score;
-  //   if (streak >= 2) showStreak();
-  // } else {
-  //   streak = 0;
-  // }
+  if (isCorrect) {
+    // คะแนนโบนัสตามความเร็ว: 50 base + สูงสุด 50 bonus
+    const bonus = 1;
+    score += bonus;
+    streak++;
+    el.scoreDisplay.textContent = score;
+    if (streak >= 2) showStreak();
+  } else {
+    streak = 0;
+  }
 
   revealAnswers(btn);
   el.nextBtn.classList.add('show');
