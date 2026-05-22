@@ -41,6 +41,65 @@ const questions = [
       { text: '10', correct: false },
       { text: '4',  correct: false }
     ]
+  },
+  {
+    question: 'สภาพอากาศแบบไหนที่มักมีฝนตก?',
+    answers: [
+      { text: 'มีเมฆดำ', correct: true },
+      { text: 'แดดจัด', correct: false },
+      { text: 'ท้องฟ้าโปร่ง', correct: false },
+      { text: 'อากาศแห้ง', correct: false }
+    ]
+  },
+
+  {
+    question: 'เสื้อผ้าแบบไหนเหมาะกับอากาศหนาว?',
+    answers: [
+      { text: 'เสื้อกันหนาว', correct: true },
+      { text: 'เสื้อกล้าม', correct: false },
+      { text: 'กางเกงขาสั้น', correct: false },
+      { text: 'ชุดว่ายน้ำ', correct: false }
+    ]
+  },
+
+  {
+    question: 'สัตว์ชนิดไหนบินได้?',
+    answers: [
+      { text: 'แมว', correct: false },
+      { text: 'นก', correct: true },
+      { text: 'ปลา', correct: false },
+      { text: 'เต่า', correct: false }
+    ]
+  },
+
+  {
+    question: 'เครื่องดื่มชนิดใดทำจากผลไม้?',
+    answers: [
+      { text: 'น้ำส้ม', correct: true },
+      { text: 'น้ำปลา', correct: false },
+      { text: 'ซีอิ๊ว', correct: false },
+      { text: 'น้ำซุป', correct: false }
+    ]
+  },
+
+  {
+    question: 'สิ่งของใดใช้สำหรับเขียน?',
+    answers: [
+      { text: 'ช้อน', correct: false },
+      { text: 'ดินสอ', correct: true },
+      { text: 'หมอน', correct: false },
+      { text: 'รองเท้า', correct: false }
+    ]
+  },
+
+  {
+    question: 'สีอะไรอยู่ในสัญญาณไฟจราจร?',
+    answers: [
+      { text: 'สีชมพู', correct: false },
+      { text: 'สีม่วง', correct: false },
+      { text: 'สีเขียว', correct: true },
+      { text: 'สีเทา', correct: false }
+    ]
   }
 ];
 
